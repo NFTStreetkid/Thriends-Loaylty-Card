@@ -52,7 +52,6 @@ const Home: NextPage = () => {
         isDisabled={loading}
       >
         {loading ? "Generating..." : "Generate NFT"}
-        <div><p>Welcome to the Thriends Loyalty Dashboard! I am thrilled to have you onboard. If you are reading this, it means you have successfully joined my project. <br></br>If you don't have Thriends NFT yet, don't worry, you can still explore the dashboard by clicking on the "Thriends Loyalty Dashboard" text above. <br></br>However, if you are already a holder of Thriends NFT, kindly connect your wallet and generate your Thriends NFT to receive your loyalty Thriends Street Card.</p></div>
       </Web3Button>
 
       {nfts && (
