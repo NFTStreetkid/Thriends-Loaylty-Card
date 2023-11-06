@@ -11,7 +11,7 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     // Initialize the SDK
     const sdk = ThirdwebSDK.fromPrivateKey(
       process.env.WALLET_PRIVATE_KEY!,
-      "mumbai",
+      "ethereum",
       {
         secretKey: process.env.TW_SECRET_KEY!,
       }
