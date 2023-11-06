@@ -9,7 +9,7 @@ export const Header = () => {
       <div style={{ width: "200px" }}>
         <Link href="/">
           <Image
-            src="/thirdweb.svg"
+            src="https://thriends.io/wp-content/uploads/2023/11/Thriends-LogoLC.svg"
             alt="thirdweb"
             width={52}
             height={32}
@@ -19,7 +19,7 @@ export const Header = () => {
       </div>
 
       <Link href="/admin" className={styles.link}>
-        Admin Dashboard
+        Thriends Loyalty Dashboard
       </Link>
 
       <div style={{ width: "200px" }}>
