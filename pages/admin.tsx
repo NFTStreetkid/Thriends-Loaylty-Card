@@ -13,16 +13,8 @@ const Home: NextPage = () => {
 
   const tabOptions = [
     {
-      label: "All",
-      value: "all",
-    },
-    {
       label: "Active",
       value: "active",
-    },
-    {
-      label: "Burned",
-      value: "burned",
     },
   ];
 
@@ -44,11 +36,6 @@ const Home: NextPage = () => {
 
       {nfts && (
         <div className={styles.nfts}>
-          {/* Show all NFTs in the all tab */}
-          {tab === "all" &&
-            nfts.map((nft) => (
-              <NFTCard nft={nft} key={nft.metadata.id} adminView={true} />
-            ))}
 
           {/* show the NFTs which do not belong to 0x0000000000000000000000000000000000000000 */}
           {tab === "active" &&
@@ -61,16 +48,6 @@ const Home: NextPage = () => {
                 <NFTCard nft={nft} key={nft.metadata.id} adminView={true} />
               ))}
 
-          {/* show the NFTs which belong to 0x0000000000000000000000000000000000000000 */}
-          {tab === "burned" &&
-            nfts
-              .filter(
-                (nft) =>
-                  nft.owner === "0x0000000000000000000000000000000000000000"
-              )
-              .map((nft) => (
-                <NFTCard nft={nft} key={nft.metadata.id} adminView={true} />
-              ))}
         </div>
       )}
 
