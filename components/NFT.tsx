@@ -54,7 +54,7 @@ export const NFTCard: FC<NFTProps> = ({ nft, adminView }) => {
         <ThirdwebNftMedia metadata={nft.metadata} />
       ) : (
         <Image
-          src="https://t3.ftcdn.net/jpg/02/48/42/64/360_F_248426448_NVKLywWqArG2ADUxDq6QprtIzsF82dMF.jpg"
+          src="https://thriends.io/wp-content/uploads/2023/11/Thriends-Logo-1.jpg"
           alt=""
           width="360"
           height="200"
@@ -82,7 +82,7 @@ export const NFTCard: FC<NFTProps> = ({ nft, adminView }) => {
           <p>
             <strong>Token ID:</strong> {nft.metadata.id}
           </p>
-          <p>Owner: {nft.owner}</p>
+          <p>Thriend Owner: {nft.owner}</p>
           {nft.owner !== "0x0000000000000000000000000000000000000000" && (
             <Web3Button
               // Use the revoke function of the erc721 contract to revoke the NFT
