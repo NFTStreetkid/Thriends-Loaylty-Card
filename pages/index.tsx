@@ -46,6 +46,7 @@ const Home: NextPage = () => {
   return (
     <main className={styles.container}>
       <Header />
+      <text>test</text>
       <Web3Button
         action={() => generate()}
         contractAddress={CONTRACT_ADDRESS}
