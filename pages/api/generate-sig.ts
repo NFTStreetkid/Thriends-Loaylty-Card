@@ -25,14 +25,14 @@ const handler = async (req: NextApiRequest, res: NextApiResponse) => {
     const payload: PayloadToSign721withQuantity = {
       to: address,
       metadata: {
-        name: "My loyalty card",
+        name: "My Thriends loyalty card",
         description: "My loyalty card description.",
         image:
-          "ipfs://bafybeie2mhmbriq4ndtl3i7enkovlm6njycdutobw4jczixdbfoensranm/blue_square.png",
+          "ipfs://QmWXZYFQn8a3HQTPDgEE7KkZkamHXnnjA1XRbpq77hMy81",
         attributes: [
           {
-            trait_type: "color",
-            value: "blue",
+            trait_type: "Thriends Loyalty",
+            value: "Loyalty Card",
           },
           {
             trait_type: "points",
