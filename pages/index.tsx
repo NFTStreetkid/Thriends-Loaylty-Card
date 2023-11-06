@@ -53,7 +53,7 @@ const Home: NextPage = () => {
       >
         {loading ? "Generating..." : "Generate NFT"}
       </Web3Button>
-      `&quot;`Welcome to the Thriends Loyalty Dashboard! I am thrilled to have you onboard. If you are reading this, it means you have successfully joined my project. If you don't have Thriends NFT yet, don't worry, you can still explore the dashboard by clicking on the "Thriends Loyalty Dashboard" text above. However, if you are already a holder of Thriends NFT, kindly connect your wallet and generate your Thriends NFT to receive your loyalty Thriends Street Card.`&quot;`
+      <text>Welcome to the Thriends Loyalty Dashboard! I am thrilled to have you onboard. If you are reading this, it means you have successfully joined my project. If you don't have Thriends NFT yet, don't worry, you can still explore the dashboard by clicking on the "Thriends Loyalty Dashboard" text above. However, if you are already a holder of Thriends NFT, kindly connect your wallet and generate your Thriends NFT to receive your loyalty Thriends Street Card.</text>
       {nfts && (
         <div className={styles.nfts}>
           {nfts.map((nft) => (
