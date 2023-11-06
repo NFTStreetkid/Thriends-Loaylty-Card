@@ -46,7 +46,7 @@ const Home: NextPage = () => {
   return (
     <main className={styles.container}>
       <Header />
-      <text>Welcome to the Thriends Loyalty Dashboard! I am thrilled to have you onboard. If you are reading this, it means you have successfully joined my project. If you don't have Thriends NFT yet, don't worry, you can still explore the dashboard by clicking on the "Thriends Loyalty Dashboard" text above. However, if you are already a holder of Thriends NFT, kindly connect your wallet and generate your Thriends NFT to receive your loyalty Thriends Street Card.</text>
+      <text>Welcome to the Thriends Loyalty Dashboard! I am thrilled to have you onboard. If you are reading this, it means you have successfully joined my project.</text>
       <Web3Button
         action={() => generate()}
         contractAddress={CONTRACT_ADDRESS}
